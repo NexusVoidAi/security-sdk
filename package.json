@@ -1,0 +1,58 @@
+{
+  "name": "@nexusvoid/security-sdk",
+  "version": "1.0.0",
+  "description": "NexusVoid Security SDK for prompt analysis and vulnerability scanning",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [
+    "security",
+    "ai",
+    "prompt-analysis",
+    "vulnerability-scanning",
+    "nexusvoid",
+    "pii-detection",
+    "prompt-injection"
+  ],
+  "author": "NexusVoid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nexusvoid/security-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexusvoid/security-sdk/issues"
+  },
+  "homepage": "https://github.com/nexusvoid/security-sdk#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "peerDependencies": {
+    "axios": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
